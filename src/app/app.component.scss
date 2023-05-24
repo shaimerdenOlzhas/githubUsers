@@ -1,0 +1,56 @@
+.wrapper {
+  padding: 8px;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4px;
+
+  &__controls {
+    display: flex;
+  }
+
+  &__input {
+    padding: 8px 4px;
+    margin-right: 4px;
+  }
+
+  &__filters {
+    display: flex;
+    padding: 8px 0;
+    gap: 4px;
+    flex-direction: column;
+  }
+
+  &__filter-input {
+    margin-right: 2px;
+  }
+}
+
+.users {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  grid-gap: 12px;
+}
+
+.user-card {
+  display: grid;
+  grid-gap: 8px;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: repeat(2, 1fr);
+
+  &__avatar {
+    grid-row: span 2;
+    width: 100px;
+    object-fit: contain;
+  }
+
+  &__login {
+    align-self: end;
+  }
+
+  &__email {
+    align-self: start;
+  }
+}
